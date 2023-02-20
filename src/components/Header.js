@@ -5,8 +5,8 @@ import NavBar from './NavBar';
 const Header = () => {
     return (
         <div className={styles.header}>
-            <img src={background} alt='computer'></img>
-            <NavBar />
+            <img src={background} alt='computer'></img>;
+            <NavBar />;
         </div>
     );
 };
