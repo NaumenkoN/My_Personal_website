@@ -1,0 +1,18 @@
+.header-context {
+    width: 70vw;
+    height: 65vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 4;
+    bottom: 3rem;
+    margin: 0 15vw;
+    border-radius: 10px;
+    /* border-top-left-radius: 15%; */
+    border-bottom-left-radius: 20%;
+}
+
+.header-context h1,
+.header-context p {
+    color: white;
+    margin-left: 40%;
+}
