@@ -4,7 +4,7 @@
     background-color: rgb(255, 255, 255);
     position: absolute;
     z-index: 4;
-    bottom: 7vh;
+    bottom: 9vh;
     margin: 0 11vw;
     border-radius: 10px;
     text-overflow: ellipsis;
@@ -21,25 +21,5 @@
     overflow: hidden;
     color: red;
     font-weight: bold;
-    filter: blur(0.7px);
-}
-
-.greetings {
-    position: absolute;
-    top: 30vh;
-    right: 15vw;
-    font-size: 8vh;
-    color: white;
-}
-
-.greetings span {
-    color: red;
-}
-
-.explanation {
-    position: absolute;
-    top: 55vh;
-    right: 19vw;
-    font-size: 3vh;
-    color: white;
+    filter: blur(0.6px);
 }

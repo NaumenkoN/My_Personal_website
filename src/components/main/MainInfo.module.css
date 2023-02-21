@@ -1,0 +1,19 @@
+.greetings {
+    position: absolute;
+    top: 25vh;
+    right: 15vw;
+    font-size: 9vh;
+    color: white;
+}
+
+.greetings span {
+    color: red;
+}
+
+.explanation {
+    position: absolute;
+    top: 47vh;
+    right: 14.5vw;
+    font-size: 2.5vh;
+    color: white;
+}

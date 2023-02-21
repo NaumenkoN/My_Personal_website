@@ -1,0 +1,7 @@
+.img {
+    background-image: url('/src/img/back-ground1.jpg');
+    background-size: cover;
+    filter: blur(2px);
+    height: 100vh;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.95);
+}
