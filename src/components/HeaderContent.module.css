@@ -1,18 +1,45 @@
 .header-context {
-    width: 70vw;
-    height: 65vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    width: 80vw;
+    height: 1rem;
+    background-color: rgb(255, 255, 255);
     position: absolute;
     z-index: 4;
-    bottom: 3rem;
-    margin: 0 15vw;
+    bottom: 7vh;
+    margin: 0 11vw;
     border-radius: 10px;
-    /* border-top-left-radius: 15%; */
-    border-bottom-left-radius: 20%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.95);
+    /*  padding: 2rem 2rem 2rem 30%; */
 }
 
-.header-context h1,
 .header-context p {
+    color: rgb(151, 151, 151);
+    /* text-align: center; */
+    margin-left: 20vw;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: red;
+    font-weight: bold;
+    filter: blur(0.7px);
+}
+
+.greetings {
+    position: absolute;
+    top: 30vh;
+    right: 15vw;
+    font-size: 8vh;
     color: white;
-    margin-left: 40%;
+}
+
+.greetings span {
+    color: red;
+}
+
+.explanation {
+    position: absolute;
+    top: 55vh;
+    right: 19vw;
+    font-size: 3vh;
+    color: white;
 }
