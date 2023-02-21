@@ -10,7 +10,7 @@ const NavBar = () => {
                 </h1>
                 <div className={styles['header-links']}>
                     <a href='#stack'>Stack of Technologies</a>
-                    <a href='#works'>Works</a>
+                    <a href='#works'>Projects</a>
                     <a href='#contacts'>Contacts</a>
                 </div>
             </div>

@@ -7,12 +7,14 @@
     bottom: 3rem;
     margin: 0 15vw;
     border-radius: 10px;
+
+    padding: 2rem 2rem 2rem 30%;
     /* border-top-left-radius: 15%; */
-    border-bottom-left-radius: 20%;
+    /* border-bottom-left-radius: 20%; */
 }
 
 .header-context h1,
 .header-context p {
     color: white;
-    margin-left: 40%;
+    text-align: center;
 }
