@@ -1,7 +1,7 @@
 import styles from './NavBar.module.css';
 const NavBar = () => {
     const logoIcon = '</>';
-    const logo = 'WEB</>DEVELOPMENT';
+    const logo = `WEB ${logoIcon} DEVELOPMENT`;
     return (
         <>
             <div className={styles['nav-bar']}>
