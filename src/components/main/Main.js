@@ -4,11 +4,11 @@ import NavBar from './NavBar';
 import HeaderContext from './HeaderContent';
 import Background from './Background';
 
-const Main = ({ showStackPage, showMainPage }) => {
+const Main = ({ showStackPage, showProjectsPage, underline }) => {
     return (
         <div className={styles.header}>
             <Background />
-            <NavBar showStackPage={showStackPage} showMainPage={showMainPage} />
+            <NavBar showStackPage={showStackPage} showProjectsPage={showProjectsPage} underline={underline} />
             <img className={styles.personal} src={personal} alt='my_photo'></img>
             <HeaderContext />
         </div>

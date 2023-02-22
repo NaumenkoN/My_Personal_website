@@ -4,7 +4,7 @@
     background-color: white;
 
     position: absolute;
-    top: 3rem;
+    top: 7vh;
     left: 0;
 
     box-shadow: 0 0 6px rgba(255, 255, 255, 0.95);
@@ -36,7 +36,7 @@
     margin: 0 1rem;
     font-size: 1.1rem;
     text-shadow: 0 0 3px grey;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .header-links a:hover {
@@ -47,4 +47,8 @@
 .header-links a:active {
     color: rgb(184, 0, 0);
     text-shadow: 0 0 3px rgb(184, 0, 0);
+}
+
+#underlines {
+    border-bottom: 1px solid rgb(253, 46, 46);
 }
