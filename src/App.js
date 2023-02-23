@@ -2,7 +2,7 @@ import React from 'react';
 import Main from './components/main/Main';
 import { useState } from 'react';
 import Stack from './components/StackPage/Stack';
-import ProjectPage from './components/projects/ProjectPage';
+import ProjectsPage from './components/projects/ProjectsPage';
 import ContactsPage from './components/contacts/ContactsPage';
 
 function App() {
@@ -55,7 +55,7 @@ function App() {
             )}
 
             {projectsPageState && (
-                <ProjectPage showContactsPage={showContactsPage} showStackPage={showStackPage} showMainPage={showMainPage} underline={underline} />
+                <ProjectsPage showContactsPage={showContactsPage} showStackPage={showStackPage} showMainPage={showMainPage} underline={underline} />
             )}
 
             {contactsPageState && (

@@ -1,4 +1,4 @@
-import styles from './ProjectPage.module.css';
+import styles from './ProjectsPage.module.css';
 import Background from '../main/Background';
 import NavBar from '../main/NavBar';
 import Project from './Project';
@@ -30,8 +30,8 @@ const dataProjects = [
     {
         src: mySecondWS,
         alt: 'web site logo',
-        href: 'http://fsvd.net/',
-        href2: 'https://github.com/NaumenkoN/fsvd.net',
+        href: 'http://fswd.net/',
+        href2: 'https://github.com/NaumenkoN/fswd.net',
         header: 'Personal website',
         id: Math.random(),
         comment: 'My main website about me as a web-developer.',

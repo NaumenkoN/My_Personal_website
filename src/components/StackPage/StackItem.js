@@ -1,8 +1,8 @@
 import styles from './StackItem.module.css';
 
-const StackItem = ({ src, alt, icon, comment, style, Mykey }) => {
+const StackItem = ({ src, alt, icon, comment, style }) => {
     return (
-        <div className={`${styles.card} ${style}`}>
+        <div className={`${styles.card} ${style ? style.flex : ''}`}>
             <img className={styles.icon1} src={src} alt={alt}></img>
             <div className={styles['content']}>
                 <div className={styles['status-block']}>

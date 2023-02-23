@@ -71,3 +71,7 @@
 .comment-block p {
     margin-left: 1rem;
 }
+
+.flex {
+    display: none;
+}

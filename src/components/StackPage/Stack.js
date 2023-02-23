@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import NavBar from '../main/NavBar';
 import Background from '../main/Background';
 import StackItems from './StackItems';
@@ -20,7 +20,7 @@ import imgSQL from '../../img/icons/sql.png';
 import imgSASS from '../../img/icons/sass.png';
 
 const Stack = ({ showProjectsPage, showMainPage, showContactsPage, underline }) => {
-    const data = [
+    let data = [
         {
             src: imgHtml,
             alt: 'html icon',
@@ -92,6 +92,22 @@ const Stack = ({ showProjectsPage, showMainPage, showContactsPage, underline }) 
             comment: 'skfjn wwkfddjn je n  jeejn dwkdjn sj',
         },
     ];
+    /*    const [style, setStyle] = useState('');
+    let count = 0;
+    setTimeout(() => {
+        for (let i = 1; i < 10000; i++) {
+            count += 1;
+
+            if (count % 1000 === 0) {
+                data[count / 1000 - 1].style = true;
+                setStyle(true);
+                continue;
+            }
+          
+        }
+        console.log(data);
+        setStyle(true);
+    }, 2000); */
 
     return (
         <React.Fragment>
@@ -99,7 +115,16 @@ const Stack = ({ showProjectsPage, showMainPage, showContactsPage, underline }) 
             <NavBar showContactsPage={showContactsPage} showProjectsPage={showProjectsPage} showMainPage={showMainPage} underline={underline} />
             <StackItems>
                 {data.map((item, index) => {
-                    return <StackItem key={index} src={item.src} alt={item.alt} icon={item.icon} comment={item.comment} style={item.style} />;
+                    return (
+                        <StackItem
+                            /* style={data[index].style} */
+                            key={index}
+                            src={item.src}
+                            alt={item.alt}
+                            icon={item.icon}
+                            comment={item.comment}
+                        />
+                    );
                 })}
             </StackItems>
         </React.Fragment>
