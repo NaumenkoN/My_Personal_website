@@ -1,0 +1,17 @@
+.content {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    color: white;
+    margin: 0 0 0 1rem;
+}

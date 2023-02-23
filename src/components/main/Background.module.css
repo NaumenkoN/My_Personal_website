@@ -1,0 +1,6 @@
+.img {
+    background-image: url('/src/img/back-ground1.jpg');
+    background-size: cover;
+    filter: blur(2px);
+    height: 100vh;
+}

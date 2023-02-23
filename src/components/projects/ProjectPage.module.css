@@ -1,0 +1,10 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 40vw);
+    grid-template-rows: repeat(3, 20vh);
+    gap: 1rem;
+
+    position: absolute;
+    top: 20vh;
+    margin: 0 8.5vw;
+}
