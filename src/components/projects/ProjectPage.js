@@ -47,11 +47,11 @@ const dataProjects = [
     },
 ];
 
-const ProjectPage = ({ showStackPage, showMainPage, underline }) => {
+const ProjectPage = ({ showStackPage, showMainPage, showContactsPage, underline }) => {
     return (
         <div>
             <Background />
-            <NavBar showStackPage={showStackPage} showMainPage={showMainPage} underline={underline} />
+            <NavBar showContactsPage={showContactsPage} showStackPage={showStackPage} showMainPage={showMainPage} underline={underline} />
             <div className={styles.grid}>
                 {dataProjects.map(site => {
                     return (

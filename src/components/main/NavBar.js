@@ -1,5 +1,5 @@
 import styles from './NavBar.module.css';
-const NavBar = ({ showStackPage, showMainPage, showProjectsPage, underline }) => {
+const NavBar = ({ showStackPage, showMainPage, showProjectsPage, showContactsPage, underline }) => {
     const logoIcon = '</>';
 
     return (
@@ -15,10 +15,10 @@ const NavBar = ({ showStackPage, showMainPage, showProjectsPage, underline }) =>
                     <a id={`${underline === 2 ? styles.underlines : ' '}`} href='/#stack' onClick={showStackPage}>
                         Technology Stack
                     </a>
-                    <a id={`${underline === 3 ? styles.underlines : ' '}`} href='#works' onClick={showProjectsPage}>
+                    <a id={`${underline === 3 ? styles.underlines : ' '}`} href='#projects' onClick={showProjectsPage}>
                         Projects
                     </a>
-                    <a id={`${underline === 3 ? styles.underlines : ' '}`} href='#contacts'>
+                    <a id={`${underline === 4 ? styles.underlines : ' '}`} href='#contacts' onClick={showContactsPage}>
                         Contacts
                     </a>
                 </div>

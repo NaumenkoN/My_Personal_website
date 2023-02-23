@@ -19,7 +19,7 @@ import imgNodeJs from '../../img/icons/nodejs.png';
 import imgSQL from '../../img/icons/sql.png';
 import imgSASS from '../../img/icons/sass.png';
 
-const Stack = ({ showProjectsPage, showMainPage, underline }) => {
+const Stack = ({ showProjectsPage, showMainPage, showContactsPage, underline }) => {
     const data = [
         {
             src: imgHtml,
@@ -95,8 +95,8 @@ const Stack = ({ showProjectsPage, showMainPage, underline }) => {
 
     return (
         <React.Fragment>
-            <Background></Background>
-            <NavBar showProjectsPage={showProjectsPage} showMainPage={showMainPage} underline={underline} />
+            <Background />
+            <NavBar showContactsPage={showContactsPage} showProjectsPage={showProjectsPage} showMainPage={showMainPage} underline={underline} />
             <StackItems>
                 {data.map((item, index) => {
                     return <StackItem key={index} src={item.src} alt={item.alt} icon={item.icon} comment={item.comment} style={item.style} />;
