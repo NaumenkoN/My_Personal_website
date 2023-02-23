@@ -1,11 +1,16 @@
 .content {
     display: flex;
     justify-content: flex-start;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
 }
 
-.img {
+.project-img {
     width: 40%;
     object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(204, 203, 203, 0.8);
 }
 
 .description {
@@ -14,4 +19,27 @@
     width: 60%;
     color: white;
     margin: 0 0 0 1rem;
+}
+
+.desch2 {
+    font-size: 3vh;
+}
+
+.descp {
+    margin-top: 2vh;
+}
+
+.desca {
+    text-decoration: none;
+    color: gray;
+    transition: all 0.3s;
+}
+
+.desca:hover {
+    text-decoration: underline;
+    color: rgb(230, 230, 230);
+}
+
+.desca:active {
+    color: rgb(173, 173, 173);
 }

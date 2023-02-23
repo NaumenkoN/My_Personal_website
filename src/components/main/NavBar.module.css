@@ -50,5 +50,6 @@
 }
 
 #underlines {
-    border-bottom: 1px solid rgb(253, 46, 46);
+    color: rgb(253, 46, 46);
+    text-shadow: 0 0 3px rgb(253, 46, 46);
 }
