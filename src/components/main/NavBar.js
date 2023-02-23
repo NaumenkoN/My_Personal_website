@@ -13,7 +13,7 @@ const NavBar = ({ showStackPage, showMainPage, showProjectsPage, underline }) =>
                         Main
                     </a>
                     <a id={`${underline === 2 ? styles.underlines : ' '}`} href='#stack' onClick={showStackPage}>
-                        Stack of Technologies
+                        Technology Stack
                     </a>
                     <a id={`${underline === 3 ? styles.underlines : ' '}`} href='#works' onClick={showProjectsPage}>
                         Projects
