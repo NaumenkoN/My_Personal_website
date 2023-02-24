@@ -1,17 +1,37 @@
-.background {
-    width: 100vw;
-    height: 100vh;
-    filter: blur(2px);
-}
-
 .personal {
     position: absolute;
     bottom: 0.2rem;
 
     left: 1rem;
     height: 75vh;
-
-    /* opacity: 0.8; */
     z-index: 5;
-    background: linear-gradient(red);
+    animation: tarnsition 1000ms ease-out;
+}
+
+@keyframes tarnsition {
+    0% {
+        transform: translateX(-10rem);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* ///////////////////////// MEDIA ///////////////////*/
+
+@media (max-width: 600px) {
+    .personal {
+        height: 43vh;
+        left: -2rem;
+        animation: tarnsition 1000ms ease-out;
+    }
+
+    /* @keyframes tarnsition {
+        0% {
+            transform: translateX(-10rem);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    } */
 }

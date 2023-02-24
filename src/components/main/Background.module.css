@@ -4,3 +4,27 @@
     filter: blur(2px);
     height: 100vh;
 }
+
+/* ///////////////////////// MEDIA ///////////////////*/
+
+@media (max-width: 600px) {
+    .img {
+        background-image: url('/src/img/back-ground-mobile.jpg');
+
+        background-attachment: fixed;
+        background-position: 40px 40px;
+    }
+
+    .gradient {
+        background-image: none;
+        background-repeat: no-repeat;
+
+        background: rgb(70, 70, 70);
+        background: linear-gradient(0deg, rgba(70, 70, 70, 1) 38%, rgba(50, 50, 50, 1) 89%);
+        min-height: 136rem;
+    }
+
+    .gradient2 {
+        min-height: 74rem;
+    }
+}

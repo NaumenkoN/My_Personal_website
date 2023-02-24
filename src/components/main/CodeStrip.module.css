@@ -23,3 +23,12 @@
     font-weight: bold;
     filter: blur(0.6px);
 }
+
+/* ///////////////////////// MEDIA ///////////////////*/
+
+@media (max-width: 600px) {
+    .header-context {
+        bottom: 1vh;
+        margin: 0 20vw;
+    }
+}

@@ -41,6 +41,9 @@
 .opacity {
     animation: opacity 3000ms ease-out;
 }
+.opacity2 {
+    animation: opacity 3000ms ease-out;
+}
 
 @keyframes opacity {
     0% {
@@ -75,5 +78,38 @@
     }
     100% {
         transform: scale(1);
+    }
+}
+
+/* ///////////////////////// MEDIA ///////////////////*/
+
+@media (max-width: 600px) {
+    .im,
+    .opacity,
+    .opacity2,
+    .developer {
+        font-size: 10vw;
+    }
+
+    .greetings {
+        position: absolute;
+        top: 15vh;
+        right: 12vw;
+        font-size: 9vh;
+        color: white;
+        text-shadow: 0 0 1px black;
+    }
+
+    .formargin {
+        margin-top: -4vh;
+    }
+
+    .explanation {
+        position: absolute;
+        top: 35vh;
+        right: 12.5vw;
+        font-size: 1.7vh;
+        color: white;
+        animation: bump 2000ms ease-out;
     }
 }

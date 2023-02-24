@@ -3,8 +3,23 @@
     top: 20vh;
 
     display: grid;
-    grid-template-rows: repeat(6, 10vh);
+    grid-template-rows: repeat(5, 10vh);
     grid-template-columns: repeat(2, 40vw);
-    gap: 2rem;
+    gap: 4vh;
     margin: 0 8vw;
+}
+
+/* ///////////////////////// MEDIA ///////////////////*/
+
+@media (max-width: 600px) {
+    .cards {
+        position: absolute;
+        top: 20vh;
+
+        display: grid;
+        grid-template-rows: repeat(10, 20vh);
+        grid-template-columns: repeat(1, 85vw);
+        gap: 3vh;
+        margin: 0 8vw;
+    }
 }

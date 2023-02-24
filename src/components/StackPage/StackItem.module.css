@@ -67,3 +67,34 @@
 .flex {
     display: none;
 }
+
+/* ///////////////////////// MEDIA ///////////////////*/
+
+@media (max-width: 600px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 5px;
+    }
+
+    .icon1 {
+        height: 70%;
+
+        margin-left: 0.6vh;
+    }
+
+    .status {
+        font-size: 7.5vw;
+    }
+
+    .icon2 {
+        margin-left: 0.5rem;
+        height: 4vh;
+    }
+
+    .comment-block p {
+        margin-top: 1vh;
+    }
+}

@@ -25,7 +25,8 @@ const dataProjects = [
         href2: 'https://github.com/NaumenkoN/toseeworld',
         header: 'Website consecrate to my travelings',
         id: Math.random(),
-        comment: 'I like travel, I like shooting videos and editing.',
+        comment:
+            'I like travel, I like shooting videos and editing.I like travel, I like shooting videos and editing.I like travel, I like shooting videos and editing.',
     },
     {
         src: mySecondWS,
@@ -50,7 +51,7 @@ const dataProjects = [
 const ProjectPage = ({ showStackPage, showMainPage, showContactsPage, underline }) => {
     return (
         <div>
-            <Background />
+            <Background underline={underline} />
             <NavBar showContactsPage={showContactsPage} showStackPage={showStackPage} showMainPage={showMainPage} underline={underline} />
             <div className={styles.grid}>
                 {dataProjects.map(site => {

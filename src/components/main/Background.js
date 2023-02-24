@@ -1,7 +1,8 @@
 import styles from './Background.module.css';
+import { useState } from 'react';
 
-const Background = () => {
-    return <div className={styles.img}></div>;
+const Background = ({ underline }) => {
+    return <div className={`${underline === 2 ? styles.gradient : ''} ${underline === 3 ? styles.gradient2 : ''} ${styles.img}`}></div>;
 };
 
 export default Background;

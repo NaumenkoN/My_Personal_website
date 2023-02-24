@@ -37,6 +37,8 @@
 
 .descp {
     margin-top: 2vh;
+
+    overflow: hidden;
 }
 
 .desca {
@@ -52,4 +54,30 @@
 
 .desca:active {
     color: rgb(173, 173, 173);
+}
+
+/* ///////////////////////// MEDIA ///////////////////*/
+
+@media (max-width: 600px) {
+    .project-img {
+        width: 50%;
+    }
+
+    .description {
+        margin: 0 0 0 1vh;
+        overflow: hidden;
+    }
+
+    .desch2 {
+        font-size: 2.2vh;
+    }
+
+    .descp {
+        margin-top: 2vh;
+    }
+
+    .desca {
+        font-size: 1vh;
+        margin-bottom: 0.5vh;
+    }
 }

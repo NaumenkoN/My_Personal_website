@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import NavBar from '../main/NavBar';
 import Background from '../main/Background';
 import StackItems from './StackItems';
@@ -92,26 +92,10 @@ const Stack = ({ showProjectsPage, showMainPage, showContactsPage, underline }) 
             comment: 'skfjn wwkfddjn je n  jeejn dwkdjn sj',
         },
     ];
-    /*    const [style, setStyle] = useState('');
-    let count = 0;
-    setTimeout(() => {
-        for (let i = 1; i < 10000; i++) {
-            count += 1;
-
-            if (count % 1000 === 0) {
-                data[count / 1000 - 1].style = true;
-                setStyle(true);
-                continue;
-            }
-          
-        }
-        console.log(data);
-        setStyle(true);
-    }, 2000); */
 
     return (
-        <React.Fragment>
-            <Background />
+        <div>
+            <Background underline={underline} />
             <NavBar showContactsPage={showContactsPage} showProjectsPage={showProjectsPage} showMainPage={showMainPage} underline={underline} />
             <StackItems>
                 {data.map((item, index) => {
@@ -127,7 +111,7 @@ const Stack = ({ showProjectsPage, showMainPage, showContactsPage, underline }) 
                     );
                 })}
             </StackItems>
-        </React.Fragment>
+        </div>
     );
 };
 

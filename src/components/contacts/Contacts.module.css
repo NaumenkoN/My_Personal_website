@@ -65,3 +65,36 @@
     background-color: grey;
     color: white;
 }
+
+/* ///////////////////////// MEDIA ///////////////////*/
+
+@media (max-width: 600px) {
+    .backdrop {
+        top: 20vh;
+        left: 5vw;
+        width: 90vw;
+        height: 60vh;
+    }
+
+    .close-modal__button {
+        right: 3.7vw;
+        font-size: 6.6vw;
+    }
+
+    .contacts {
+        padding-top: 4vh;
+    }
+
+    .contacts-icons {
+        height: 7vh;
+    }
+
+    .contact-text {
+        padding: 15vw 4vw 2vw;
+        text-align: center;
+        font-size: 4.7vw;
+    }
+    .close-modal__button {
+        color: rgb(187, 187, 187);
+    }
+}

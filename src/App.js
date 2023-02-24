@@ -58,7 +58,13 @@ function App() {
     return (
         <React.Fragment>
             {mainPageState && (
-                <Main showContactsPage={showContactsPage} showStackPage={showStackPage} showProjectsPage={showProjectsPage} underline={underline} />
+                <Main
+                    hideContactsPage={hideContactsPage}
+                    showContactsPage={showContactsPage}
+                    showStackPage={showStackPage}
+                    showProjectsPage={showProjectsPage}
+                    underline={underline}
+                />
             )}
 
             {stackPageState && (
