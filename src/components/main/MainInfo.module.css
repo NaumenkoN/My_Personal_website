@@ -7,8 +7,48 @@
     text-shadow: 0 0 1px black;
 }
 
-.greetings span {
+.im {
+    display: inline-block;
     color: red;
+    animation: transition 1000ms ease-out;
+}
+@keyframes transition {
+    0% {
+        transform: translateX(-70px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.developer {
+    display: inline-block;
+    color: red;
+    animation: transition2 1000ms ease-out;
+}
+
+@keyframes transition2 {
+    0% {
+        transform: translateX(70px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.opacity {
+    animation: opacity 3000ms ease-out;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .explanation {
@@ -17,4 +57,23 @@
     right: 14.5vw;
     font-size: 2.5vh;
     color: white;
+    animation: bump 2000ms ease-out;
+}
+
+@keyframes bump {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.005);
+    }
+    70% {
+        transform: scale(1.015);
+    }
+    85% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
 }

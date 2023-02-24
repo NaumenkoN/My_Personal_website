@@ -4,9 +4,11 @@ const MainInfo = () => {
     return (
         <>
             <h1 className={styles.greetings}>
-                <span>I`M</span> NIKOLAI
+                <span className={styles.im}>I`M</span>
+                <span className={styles.opacity}> NIKOLAI</span>
                 <br />
-                WEB <span>DEVELOPER</span>
+                <span className={styles.opacity}>WEB </span>
+                <span className={styles.developer}>DEVELOPER</span>
             </h1>
             <p className={styles.explanation}>Helping you and your busines to grow up</p>
         </>

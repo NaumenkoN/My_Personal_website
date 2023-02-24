@@ -1,0 +1,67 @@
+.modal {
+    position: fixed;
+    z-index: 10;
+
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.backdrop {
+    position: fixed;
+    top: 15vh;
+    left: 25vw;
+    width: 50vw;
+    height: 70vh;
+    z-index: 11;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0 0 7px white;
+}
+
+.close-modal__button {
+    position: absolute;
+    top: 2.6vh;
+    right: 1.7vw;
+    font-size: 1.6vw;
+    border: none;
+    background-color: white;
+}
+
+.close-modal__button:hover {
+    cursor: pointer;
+    color: rgb(150, 147, 147);
+}
+
+.hidden {
+    display: none;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 6vh;
+}
+
+.contacts-icons {
+    height: 10vh;
+}
+
+.contact-text {
+    padding: 4vw 4vw 2vw;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.download {
+    margin: 1rem 43.5%;
+    padding: 1vh 1vw;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 1vw;
+    background-color: grey;
+    color: white;
+}

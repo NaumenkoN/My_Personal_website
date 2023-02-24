@@ -4,6 +4,16 @@
     border: 1px solid white;
     border-radius: 5px;
     padding: 5px;
+    animation: rotate 1000ms ease-out;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateX(90deg);
+    }
+    100% {
+        transform: rotateX(0);
+    }
 }
 
 .project-img {

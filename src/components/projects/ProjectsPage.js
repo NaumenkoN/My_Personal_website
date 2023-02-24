@@ -16,7 +16,7 @@ const dataProjects = [
         href2: 'https://github.com/NaumenkoN/tvoypermanent',
         header: 'First commercial website',
         id: Math.random(),
-        comment: 'It is the first chargible web site I made for buisnes.',
+        comment: 'It is the first paid project I made.',
     },
     {
         src: myFirtWS,
