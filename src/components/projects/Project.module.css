@@ -4,15 +4,15 @@
     border: 1px solid rgb(153, 153, 153);
     border-radius: 5px;
     padding: 5px;
-    animation: rotate 1000ms ease-out;
+    animation: scale 1000ms ease-out;
 }
 
-@keyframes rotate {
+@keyframes scale {
     0% {
-        transform: rotateX(90deg);
+        scale: 0.01;
     }
     100% {
-        transform: rotateX(0);
+        scale: 1;
     }
 }
 
