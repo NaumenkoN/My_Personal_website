@@ -59,7 +59,7 @@ const Stack = ({ showProjectsPage, showMainPage, showContactsPage, underline }) 
         {
             src: imgBootStrap,
             alt: 'bootstrap icon',
-            icon: good,
+            icon: normal,
             id: Math.random(),
             comment: 'Connect library, find and set some features.',
         },

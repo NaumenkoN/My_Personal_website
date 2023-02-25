@@ -28,6 +28,7 @@
     font-size: 1.6vw;
     border: none;
     background-color: white;
+    color: rgb(187, 187, 187);
 }
 
 .close-modal__button:hover {
@@ -43,7 +44,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 2vh;
+    padding-top: 0.5vh;
 }
 
 .contacts-icons {
@@ -51,7 +52,7 @@
 }
 
 .contact-text {
-    padding: 4vw 4vw 2vw;
+    padding: 3vw 4vw 2vw;
     text-align: center;
     font-size: 3.5vh;
 }
@@ -82,11 +83,11 @@
     }
 
     .contacts {
-        padding-top: 4vh;
+        padding-top: 1vh;
     }
 
     .contacts-icons {
-        height: 7vh;
+        height: 4vh;
     }
 
     .contact-text {
@@ -95,6 +96,6 @@
         font-size: 4.7vw;
     }
     .close-modal__button {
-        color: rgb(187, 187, 187);
+        top: 2vh;
     }
 }

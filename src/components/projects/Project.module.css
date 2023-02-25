@@ -34,11 +34,13 @@
 
 .desch2 {
     font-size: 3vh;
+    font-weight: normal;
 }
 
 .descp {
     margin-top: 1vh;
     font-size: 1vw;
+    font-weight: normal;
 }
 
 .desca {
@@ -74,7 +76,7 @@
 
     .descp {
         margin-top: 2vh;
-        font-size: 3vw;
+        font-size: 3.8vw;
     }
 
     .desca {

@@ -82,7 +82,7 @@
     }
 
     .icon1 {
-        height: 60%;
+        height: 50%;
 
         margin-left: 0.6vh;
     }
@@ -98,7 +98,7 @@
 
     .comment-block p {
         margin-top: 1vh;
-        margin-left: 2vw;
+        margin-left: 4vw;
         font-size: 5vw;
     }
 }

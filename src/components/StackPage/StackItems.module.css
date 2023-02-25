@@ -18,8 +18,8 @@
 
         display: grid;
         grid-template-rows: repeat(10, 20vh);
-        grid-template-columns: repeat(1, 85vw);
+        grid-template-columns: repeat(1, 90vw);
         gap: 3vh;
-        margin: 0 8vw;
+        margin: 0 4vw;
     }
 }

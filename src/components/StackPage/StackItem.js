@@ -6,7 +6,7 @@ const StackItem = ({ src, alt, icon, comment, style }) => {
             <img className={styles.icon1} src={src} alt={alt}></img>
             <div className={styles['content']}>
                 <div className={styles['status-block']}>
-                    <h3 className={styles.status}>level:</h3>
+                    <h3 className={styles.status}>Level:</h3>
                     <img className={styles.icon2} src={icon}></img>
                 </div>
                 <div className={styles['comment-block']}>
