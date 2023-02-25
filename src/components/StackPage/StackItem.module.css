@@ -61,7 +61,8 @@
 }
 
 .comment-block p {
-    margin-left: 1rem;
+    margin-left: 1vw;
+    font-size: 1.9vh;
 }
 
 .flex {
@@ -77,24 +78,27 @@
         align-items: flex-start;
         justify-content: flex-start;
         padding: 5px;
+        overflow: scroll;
     }
 
     .icon1 {
-        height: 70%;
+        height: 60%;
 
         margin-left: 0.6vh;
     }
 
     .status {
-        font-size: 7.5vw;
+        font-size: 7vw;
     }
 
     .icon2 {
         margin-left: 0.5rem;
-        height: 4vh;
+        height: 3.2vh;
     }
 
     .comment-block p {
         margin-top: 1vh;
+        margin-left: 2vw;
+        font-size: 5vw;
     }
 }

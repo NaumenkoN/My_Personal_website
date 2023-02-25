@@ -1,7 +1,7 @@
 .content {
     display: flex;
     justify-content: flex-start;
-    border: 1px solid white;
+    border: 1px solid rgb(153, 153, 153);
     border-radius: 5px;
     padding: 5px;
     animation: rotate 1000ms ease-out;
@@ -29,6 +29,7 @@
     width: 60%;
     color: white;
     margin: 0 0 0 1rem;
+    overflow: auto;
 }
 
 .desch2 {
@@ -36,9 +37,8 @@
 }
 
 .descp {
-    margin-top: 2vh;
-
-    overflow: hidden;
+    margin-top: 1vh;
+    font-size: 1vw;
 }
 
 .desca {
@@ -65,7 +65,7 @@
 
     .description {
         margin: 0 0 0 1vh;
-        overflow: hidden;
+        overflow: auto;
     }
 
     .desch2 {
@@ -74,10 +74,11 @@
 
     .descp {
         margin-top: 2vh;
+        font-size: 3vw;
     }
 
     .desca {
-        font-size: 1vh;
-        margin-bottom: 0.5vh;
+        font-size: 1.5vh;
+        margin-bottom: 0.1vh;
     }
 }

@@ -16,7 +16,7 @@ const dataProjects = [
         href2: 'https://github.com/NaumenkoN/tvoypermanent',
         header: 'First commercial website',
         id: Math.random(),
-        comment: 'It is the first paid project I made.',
+        comment: 'Made using vanilla JS. Responsive for 80% devices.',
     },
     {
         src: myFirtWS,
@@ -25,8 +25,7 @@ const dataProjects = [
         href2: 'https://github.com/NaumenkoN/toseeworld',
         header: 'Website consecrate to my travelings',
         id: Math.random(),
-        comment:
-            'I like travel, I like shooting videos and editing.I like travel, I like shooting videos and editing.I like travel, I like shooting videos and editing.',
+        comment: 'Made using vanilla JS. Implemented the function of changing the local language. ',
     },
     {
         src: mySecondWS,
@@ -35,7 +34,7 @@ const dataProjects = [
         href2: 'https://github.com/NaumenkoN/fswd.net',
         header: 'Personal website',
         id: Math.random(),
-        comment: 'My main website about me as a web-developer.',
+        comment: 'My main website about me as a web-developer. Made with React.',
     },
     {
         src: advertisement,

@@ -1,34 +1,62 @@
 .header-context {
     width: 80vw;
-    height: 1rem;
+    height: 4vh;
     background-color: rgb(255, 255, 255);
     position: absolute;
     z-index: 4;
     bottom: 10vh;
     margin: 0 11vw;
     border-radius: 10px;
-    text-overflow: ellipsis;
+
     white-space: nowrap;
     box-shadow: 0 0 3px rgba(255, 255, 255, 0.95);
-    /*  padding: 2rem 2rem 2rem 30%; */
+    animation: tarnsition 1000ms ease-out;
+}
+
+@keyframes tarnsition {
+    0% {
+        bottom: -10vh;
+    }
+    100% {
+        bottom: 10vh;
+    }
 }
 
 .header-context p {
     color: rgb(151, 151, 151);
-    /* text-align: center; */
+
     margin-left: 20vw;
-    text-overflow: ellipsis;
+
     overflow: hidden;
     color: red;
     font-weight: bold;
+    font-size: 2vh;
     filter: blur(0.6px);
+    margin-top: 0.5vh;
 }
 
 /* ///////////////////////// MEDIA ///////////////////*/
 
 @media (max-width: 600px) {
+    .header-context p {
+        margin: 0;
+        margin-left: 30vw;
+        filter: blur(1px);
+    }
+
     .header-context {
-        bottom: 1vh;
-        margin: 0 20vw;
+        bottom: 3.3vh;
+        margin: 0 18vw;
+        animation: tarnsition 1000ms ease-out;
+        height: 3vh;
+    }
+
+    @keyframes tarnsition {
+        0% {
+            bottom: -10vh;
+        }
+        100% {
+            bottom: 3.3vh;
+        }
     }
 }

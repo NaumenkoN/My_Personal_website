@@ -21,7 +21,7 @@
 
 @media (max-width: 600px) {
     .personal {
-        height: 43vh;
+        height: 40vh;
         left: -2rem;
         animation: tarnsition 1000ms ease-out;
     }

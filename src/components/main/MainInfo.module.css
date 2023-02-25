@@ -93,7 +93,7 @@
 
     .greetings {
         position: absolute;
-        top: 15vh;
+        top: 13vh;
         right: 12vw;
         font-size: 9vh;
         color: white;
@@ -106,7 +106,7 @@
 
     .explanation {
         position: absolute;
-        top: 35vh;
+        top: 32vh;
         right: 12.5vw;
         font-size: 1.7vh;
         color: white;
