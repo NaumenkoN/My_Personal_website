@@ -19,6 +19,16 @@
     background-color: white;
     border-radius: 7px;
     box-shadow: 0 0 7px white;
+    animation: scale 500ms ease-out;
+}
+
+@keyframes scale {
+    0% {
+        scale: 0.01;
+    }
+    100% {
+        scale: 1;
+    }
 }
 
 .close-modal__button {
