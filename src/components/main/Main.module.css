@@ -17,21 +17,30 @@
     }
 }
 
+.personal2 {
+    position: absolute;
+    bottom: 0.2rem;
+
+    left: 1rem;
+    height: 75vh;
+    z-index: 5;
+    animation: tarnsition 1000ms ease-out;
+
+    display: none;
+}
+
 /* ///////////////////////// MEDIA ///////////////////*/
 
 @media (max-width: 600px) {
     .personal {
         height: 40vh;
         left: -2rem;
-        animation: tarnsition 1000ms ease-out;
+        display: none;
     }
 
-    /* @keyframes tarnsition {
-        0% {
-            transform: translateX(-10rem);
-        }
-        100% {
-            transform: translateX(0);
-        }
-    } */
+    .personal2 {
+        display: block;
+        height: 40vh;
+        left: -2rem;
+    }
 }
