@@ -1,7 +1,7 @@
 import styles from './NavBar.module.css';
 import { useState } from 'react';
 const NavBar = ({ showStackPage, showMainPage, showProjectsPage, showContactsPage, underline }) => {
-    const logoIcon = '</>';
+    const logoIcon = '< / >';
 
     const [sideBar, setSideBar] = useState(false);
 
@@ -9,12 +9,13 @@ const NavBar = ({ showStackPage, showMainPage, showProjectsPage, showContactsPag
         if (sideBar) {
             return setSideBar(false);
         }
+
         setSideBar(true);
     };
 
     return (
         <>
-            <div className={styles['nav-bar']}>
+            <div className={`${styles['nav-bar']} `}>
                 <h1 onClick={showMainPage}>
                     WEB <span>{logoIcon}</span> DEVELOPMENT
                 </h1>
@@ -23,7 +24,7 @@ const NavBar = ({ showStackPage, showMainPage, showProjectsPage, showContactsPag
                     <div className={styles['menu-button']}></div>
                     <div className={styles['menu-button']}></div>
                 </div>
-                <div className={`${sideBar ? '' : styles.hidden}  ${styles['side-bar']}`}>
+                <div className={`${sideBar ? '' : styles.hidden}  ${styles['side-bar']} $`}>
                     <a id={`${underline === 1 ? styles.underlines : ' '}`} href='#main' onClick={showMainPage}>
                         Main
                     </a>

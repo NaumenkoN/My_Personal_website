@@ -2,7 +2,7 @@
     position: absolute;
     bottom: 0.2rem;
 
-    left: 1rem;
+    left: -1rem;
     height: 75vh;
     z-index: 5;
     animation: tarnsition 1000ms ease-out;
@@ -17,18 +17,6 @@
     }
 }
 
-.personal2 {
-    position: absolute;
-    bottom: 0.2rem;
-
-    left: 1rem;
-    height: 75vh;
-    z-index: 5;
-    animation: tarnsition 1000ms ease-out;
-
-    display: none;
-}
-
 /* ///////////////////////// MEDIA ///////////////////*/
 
 @media (max-width: 600px) {
@@ -36,11 +24,5 @@
         height: 40vh;
         left: -2rem;
         display: none;
-    }
-
-    .personal2 {
-        display: block;
-        height: 40vh;
-        left: -2rem;
     }
 }

@@ -12,16 +12,33 @@
 
 .animation {
     display: flex;
-    animation: bump 1500ms ease-out;
+}
+
+.animation:nth-child(odd) {
+    animation: bump 1000ms ease-out;
 }
 
 @keyframes bump {
     0% {
-        opacity: 0;
+        transform: translateX(-100%);
     }
 
     100% {
-        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animation:nth-child(even) {
+    animation: bump2 1000ms ease-out;
+}
+
+@keyframes bump2 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
     }
 }
 

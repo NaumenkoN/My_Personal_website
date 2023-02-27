@@ -16,6 +16,7 @@ function App() {
     const [underline, setUnderline] = useState(1);
     const [modal, setModal] = useState(false);
     const [backdrop, setBackdrop] = useState(false);
+    const [animateClose, setAnimateClose] = useState(false);
 
     const showMainPage = () => {
         setMainPageState(true);
@@ -48,11 +49,20 @@ function App() {
     };
 
     const hideContactsPage = () => {
-        setModal(false);
-        setBackdrop(false);
+        setAnimateClose(true);
+        setTimeout(() => {
+            setModal(false);
+
+            setBackdrop(false);
+        }, 450);
+
         mainPageState && setUnderline(1);
         stackPageState && setUnderline(2);
         projectsPageState && setUnderline(3);
+
+        setTimeout(() => {
+            setAnimateClose(false);
+        }, 500);
     };
 
     return (
@@ -74,7 +84,16 @@ function App() {
             {projectsPageState && (
                 <ProjectsPage showContactsPage={showContactsPage} showStackPage={showStackPage} showMainPage={showMainPage} underline={underline} />
             )}
-            {<Contacts modal={modal} hideContactsPage={hideContactsPage} instaIcon={instaIcon} gitIcon={gitIcon} gmailIcon={gmailIcon} />}
+            {
+                <Contacts
+                    modal={modal}
+                    hideContactsPage={hideContactsPage}
+                    instaIcon={instaIcon}
+                    gitIcon={gitIcon}
+                    gmailIcon={gmailIcon}
+                    animateClose={animateClose}
+                />
+            }
         </React.Fragment>
     );
 }

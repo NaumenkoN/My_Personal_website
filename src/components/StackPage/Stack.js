@@ -22,6 +22,13 @@ import imgSASS from '../../img/icons/sass.png';
 const Stack = ({ showProjectsPage, showMainPage, showContactsPage, underline }) => {
     let data = [
         {
+            src: imgJs,
+            alt: 'JS icon',
+            icon: good,
+            id: Math.random(),
+            comment: 'All basics. Many new conception of JS ES6+: asynchronous JS, destructuring, API, DOM and more.',
+        },
+        {
             src: imgHtml,
             alt: 'html icon',
             icon: good,
@@ -35,13 +42,7 @@ const Stack = ({ showProjectsPage, showMainPage, showContactsPage, underline }) 
             id: Math.random(),
             comment: 'All basics conceptions of CSS3. Includs Grid, Flex and responsive design.',
         },
-        {
-            src: imgJs,
-            alt: 'JS icon',
-            icon: good,
-            id: Math.random(),
-            comment: 'All basics. Many new conception of JS ES6+: asynchronous JS, destructuring, API, DOM and more.',
-        },
+
         {
             src: imgReact,
             alt: 'React icon',

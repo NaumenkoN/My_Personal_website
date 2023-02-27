@@ -1,8 +1,13 @@
 .img {
     background-image: url('/src/img/back-ground1.jpg');
-    background-size: cover;
+    background-size: 100%;
     filter: blur(2px);
+    width: 100vw;
     height: 100vh;
+}
+
+.personal2 {
+    display: none;
 }
 
 /* ///////////////////////// MEDIA ///////////////////*/
@@ -10,9 +15,12 @@
 @media (max-width: 600px) {
     .img {
         background-image: url('/src/img/back-ground-mobile.jpg');
-
-        background-attachment: fixed;
-        background-position: 40px 40px;
+        background-size: cover;
+        filter: none;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        background-repeat: no-repeat;
     }
 
     .gradient {
@@ -25,6 +33,36 @@
     }
 
     .gradient2 {
+        background-image: none;
+        background-repeat: no-repeat;
+
+        background: rgb(70, 70, 70);
+        background: linear-gradient(0deg, rgba(70, 70, 70, 1) 38%, rgba(50, 50, 50, 1) 89%);
         min-height: 74rem;
+    }
+
+    .personal2 {
+        border-radius: 50%;
+        box-shadow: 0 0 25px white;
+        position: absolute;
+        display: block;
+        height: 80vw;
+        margin: 0 10vw;
+
+        bottom: 15vh;
+        z-index: 5;
+        animation: appeare 2000ms ease-out;
+    }
+
+    @keyframes appeare {
+        0% {
+            transform: rotateY(180deg);
+            opacity: 0;
+        }
+
+        100% {
+            transform: rotateY(0);
+            opacity: 1;
+        }
     }
 }
