@@ -30,7 +30,7 @@ const dataProjects = [
     {
         src: mySecondWS,
         alt: 'web site logo',
-        href: 'http://nikolai-web.ved/',
+        href: 'http://nikolai-web.dev/',
         href2: 'https://github.com/NaumenkoN/My_Personal_website',
         header: 'Personal',
         id: Math.random(),
@@ -47,12 +47,18 @@ const dataProjects = [
     },
 ];
 
-const ProjectPage = ({ showStackPage, showMainPage, showContactsPage, underline }) => {
+const ProjectPage = ({ showStackPage, showMainPage, showContactsPage, underline, openNavBar, closeNavBar }) => {
     return (
         <div>
             <Background underline={underline} />
-            <NavBar showContactsPage={showContactsPage} showStackPage={showStackPage} showMainPage={showMainPage} underline={underline} />
-            <div className={styles.grid}>
+            <NavBar
+                showContactsPage={showContactsPage}
+                showStackPage={showStackPage}
+                showMainPage={showMainPage}
+                underline={underline}
+                openNavBar={openNavBar}
+            />
+            <div className={styles.grid} onClick={closeNavBar}>
                 {dataProjects.map(site => {
                     return (
                         <Project

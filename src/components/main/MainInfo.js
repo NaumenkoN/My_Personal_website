@@ -1,9 +1,9 @@
 import styles from './MainInfo.module.css';
 
-const MainInfo = () => {
+const MainInfo = ({ closeNavBar }) => {
     return (
         <>
-            <h1 className={styles.greetings}>
+            <h1 className={styles.greetings} onClick={closeNavBar}>
                 <div>
                     <span className={styles.im}>I`M</span>
                     <span className={styles.opacity}> NIKOLAI</span>

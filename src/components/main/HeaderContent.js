@@ -1,10 +1,10 @@
 import CodeStrip from './CodeStrip';
 import MainInfo from './MainInfo';
 
-const HeaderContext = () => {
+const HeaderContext = ({ closeNavBar }) => {
     return (
         <>
-            <MainInfo />
+            <MainInfo closeNavBar={closeNavBar} />
             <CodeStrip />
         </>
     );

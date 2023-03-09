@@ -19,7 +19,7 @@ import imgNodeJs from '../../img/icons/nodejs.png';
 import imgSQL from '../../img/icons/sql.png';
 import imgSASS from '../../img/icons/sass.png';
 
-const Stack = ({ showProjectsPage, showMainPage, showContactsPage, underline }) => {
+const Stack = ({ showProjectsPage, showMainPage, showContactsPage, underline, openNavBar, closeNavBar }) => {
     let data = [
         {
             src: imgJs,
@@ -97,19 +97,16 @@ const Stack = ({ showProjectsPage, showMainPage, showContactsPage, underline }) 
     return (
         <div>
             <Background underline={underline} />
-            <NavBar showContactsPage={showContactsPage} showProjectsPage={showProjectsPage} showMainPage={showMainPage} underline={underline} />
+            <NavBar
+                showContactsPage={showContactsPage}
+                showProjectsPage={showProjectsPage}
+                showMainPage={showMainPage}
+                underline={underline}
+                openNavBar={openNavBar}
+            />
             <StackItems>
                 {data.map((item, index) => {
-                    return (
-                        <StackItem
-                            /* style={data[index].style} */
-                            key={index}
-                            src={item.src}
-                            alt={item.alt}
-                            icon={item.icon}
-                            comment={item.comment}
-                        />
-                    );
+                    return <StackItem closeNavBar={closeNavBar} key={index} src={item.src} alt={item.alt} icon={item.icon} comment={item.comment} />;
                 })}
             </StackItems>
         </div>

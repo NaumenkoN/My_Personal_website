@@ -1,8 +1,8 @@
 import styles from './StackItem.module.css';
 
-const StackItem = ({ src, alt, icon, comment, style }) => {
+const StackItem = ({ src, alt, icon, comment, closeNavBar }) => {
     return (
-        <div className={`${styles.card} ${styles.animation}`}>
+        <div onClick={closeNavBar} className={`${styles.card} ${styles.animation}`}>
             <img className={styles.icon1} src={src} alt={alt}></img>
             <div className={styles['content']}>
                 <div className={styles['status-block']}>

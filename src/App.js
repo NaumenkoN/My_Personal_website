@@ -7,6 +7,7 @@ import Contacts from './components/contacts/Contacts';
 import instaIcon from '../src/img/icons/instagram.png';
 import gitIcon from '../src/img/icons/github.png';
 import gmailIcon from '../src/img/icons/gmail.png';
+import ModalState from './stateModal/ModalState';
 
 function App() {
     const [mainPageState, setMainPageState] = useState(true);
@@ -17,6 +18,17 @@ function App() {
     const [modal, setModal] = useState(false);
     const [backdrop, setBackdrop] = useState(false);
     const [animateClose, setAnimateClose] = useState(false);
+    const [toogle, setToogle] = useState(false);
+
+    const openNavBar = () => {
+        if (toogle) {
+            return setToogle(false);
+        }
+        setToogle(true);
+    };
+    const closeNavBar = () => {
+        setToogle(false);
+    };
 
     const showMainPage = () => {
         setMainPageState(true);
@@ -24,6 +36,9 @@ function App() {
         setProjectsPageState(false);
         setContactsPageState(false);
         setUnderline(1);
+        if (toogle) {
+            setToogle(false);
+        }
     };
 
     const showStackPage = () => {
@@ -32,6 +47,9 @@ function App() {
         setProjectsPageState(false);
         setContactsPageState(false);
         setUnderline(2);
+        if (toogle) {
+            setToogle(false);
+        }
     };
 
     const showProjectsPage = () => {
@@ -40,6 +58,9 @@ function App() {
         setProjectsPageState(true);
         setContactsPageState(false);
         setUnderline(3);
+        if (toogle) {
+            setToogle(false);
+        }
     };
 
     const showContactsPage = () => {
@@ -63,10 +84,11 @@ function App() {
         setTimeout(() => {
             setAnimateClose(false);
         }, 500);
+        setToogle(false);
     };
 
     return (
-        <React.Fragment>
+        <ModalState.Provider value={{ isModal: toogle }}>
             {mainPageState && (
                 <Main
                     hideContactsPage={hideContactsPage}
@@ -74,15 +96,31 @@ function App() {
                     showStackPage={showStackPage}
                     showProjectsPage={showProjectsPage}
                     underline={underline}
+                    openNavBar={openNavBar}
+                    closeNavBar={closeNavBar}
                 />
             )}
 
             {stackPageState && (
-                <Stack showContactsPage={showContactsPage} showMainPage={showMainPage} showProjectsPage={showProjectsPage} underline={underline} />
+                <Stack
+                    showContactsPage={showContactsPage}
+                    showMainPage={showMainPage}
+                    showProjectsPage={showProjectsPage}
+                    underline={underline}
+                    openNavBar={openNavBar}
+                    closeNavBar={closeNavBar}
+                />
             )}
 
             {projectsPageState && (
-                <ProjectsPage showContactsPage={showContactsPage} showStackPage={showStackPage} showMainPage={showMainPage} underline={underline} />
+                <ProjectsPage
+                    showContactsPage={showContactsPage}
+                    showStackPage={showStackPage}
+                    showMainPage={showMainPage}
+                    underline={underline}
+                    openNavBar={openNavBar}
+                    closeNavBar={closeNavBar}
+                />
             )}
             {
                 <Contacts
@@ -94,7 +132,7 @@ function App() {
                     animateClose={animateClose}
                 />
             }
-        </React.Fragment>
+        </ModalState.Provider>
     );
 }
 
