@@ -7,7 +7,7 @@
 
 ## Description 
 
-This site is my business card. This is the third цуиsite I've built from еру scratch and the first one I made with React. The site contains standard information with my contacts, completed projects and a list of technologies that I own at the moment. 
+This site is my business card. This is the third website I've built from the scratch and the first one I made with React. The site contains standard information with my contacts, completed projects and a list of technologies that I own at the moment. 
 
 ## About the project 
 
