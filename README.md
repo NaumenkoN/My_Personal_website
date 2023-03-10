@@ -4,6 +4,7 @@
 <img src="./src/img/Mywebsite2.jpg" width="100%" />
 <p align="center">
 <img  src="./src/img/mobile_demo.jpg" width="30%" />
+  <img  src="./src/img/mobile_demo.jpg" width="30%" />
 </p>
 
 
