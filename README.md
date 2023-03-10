@@ -5,17 +5,14 @@
 
 
 
-## Descriptio 
+## Description 
 
-Solitaire implemented by scratch on vue.js. It contains 3 types of solitaire namely spider(which was made famous by
-microsoft back when I was a kid) ,spider 4 suit and klondike. I've learned web development myself without any course or coaching so don't expect too
-much from the source code xD. 
+This site is my business card. This is the third цуиsite I've built from еру scratch and the first one I made with React. The site contains standard information with my contacts, completed projects and a list of technologies that I own at the moment. 
 
 ## About the project 
-eventlisteners on the Card.vue component. - Libraries like Vue.draggable were not used as i had to write most of the drag and drop logic according to
-the solitaire game type and I also had to **MOVE** the stack of cards. - Ghost image in drag is removed instead the **whole stack** of card moves with
-cursor change. ### CSS - Each and every card is 100% css except the SVG of the suit in the center of the card,which is made by illustrator tool. ### 3
-mode menu Choose from 3 variants of solitaire form the main menu # Variants ## **Klondike** ## **Spider 4 Suit** ## **Spider 1 Suit** 
+
+Made with React. CSS modules. Hooks I used: useContext, useEffect, useState. Just because there were few "pages", I used states to switch between them, maybe REACT ROUTER was worth it? :). This project taught me how to use animations in CSS and I used them a lot and with pleasure. :) 
 
 ## Project setup
-``` npm install npm start ```
+``` npm install 
+    npm start ```
