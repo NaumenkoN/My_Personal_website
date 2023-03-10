@@ -1,7 +1,7 @@
 <h1 align="center">Personal Website</h1>
 <h2 align="center"></h2>
 
-<img src="./My Personal website/src/img/Mywebsite2.jpg" width="100%" />
+<img src="./src/img/Mywebsite2.jpg" width="100%" />
 
 <h2 align="center"><a href="https://solitairevue.firebaseapp.com">Live Demo</a></h2>
 
