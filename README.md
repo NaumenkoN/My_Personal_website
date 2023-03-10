@@ -2,7 +2,10 @@
 <h2 align="center"><a href="https://nikolai-web.dev">visit website</a></h2>
 
 <img src="./src/img/Mywebsite2.jpg" width="100%" />
-<img align="center" src="./src/img/mobile_demo.jpg" width="30%" />
+<p align="center">
+<img  src="./src/img/mobile_demo.jpg" width="30%" />
+</p>
+
 
 
 
