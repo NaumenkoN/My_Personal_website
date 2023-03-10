@@ -14,5 +14,8 @@ This site is my business card. This is the third website I've built from the scr
 Made with React. CSS modules. Hooks I used: useContext, useEffect, useState. Just because there were few "pages", I used states to switch between them, maybe REACT ROUTER was worth it? :). This project taught me how to use animations in CSS and I used them a lot and with pleasure. :) 
 
 ## Project setup
-``` npm install 
-    npm start ```
+
+```
+npm install
+npm run serve
+```
