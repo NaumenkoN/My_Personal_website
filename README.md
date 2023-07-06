@@ -23,5 +23,5 @@ Made with React. CSS modules. Hooks I used: useContext, useEffect, useState. Jus
 
 ```
 npm install
-npm run 
+npm start 
 ```
